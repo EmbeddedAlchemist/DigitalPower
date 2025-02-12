@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "*.s": "arm",
+        "__config": "cpp",
+        "__verbose_abort": "cpp",
+        "cstdint": "cpp",
+        "cstdlib": "cpp",
+        "array": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}
