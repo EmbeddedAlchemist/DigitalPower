@@ -1,0 +1,15 @@
+#include <stm32g4xx_hal.h>
+#include <stm32g4xx_hal_tim.h>
+#include <stm32g4xx_hal_dma.h>
+#include <stm32g4xx_hal_usart.h>
+#include <stm32g4xx_hal_spi.h>
+#include <stm32g4xx_hal_gpio.h>
+#include <stm32g4xx_ll_spi.h>
+#include <stm32g4xx_ll_dma.h>
+#include <stm32g4xx_hal_uart.h>
+#include <stm32g4xx_hal_crc.h>
+#include <stm32g4xx_hal_adc.h>
+#include <stm32g4xx_hal_opamp.h>
+#include <stm32g4xx_hal_comp.h>
+#include <stm32g4xx_ll_opamp.h>
+#include <stm32g4xx_hal_i2c.h>

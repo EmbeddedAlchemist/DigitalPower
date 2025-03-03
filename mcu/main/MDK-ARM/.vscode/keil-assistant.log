@@ -1,0 +1,65 @@
+[info] Log at : 2025/2/15|21:28:42|GMT+0800
+
+[info] Log at : 2025/2/16|16:55:07|GMT+0800
+
+[info] Log at : 2025/2/16|17:06:25|GMT+0800
+
+[info] Log at : 2025/2/16|17:06:29|GMT+0800
+
+[info] Log at : 2025/2/17|16:38:55|GMT+0800
+
+[info] Log at : 2025/2/17|17:43:14|GMT+0800
+
+[info] Log at : 2025/2/17|19:44:48|GMT+0800
+
+[info] Log at : 2025/2/18|09:47:49|GMT+0800
+
+[info] Log at : 2025/2/18|10:49:30|GMT+0800
+
+[info] Log at : 2025/2/18|10:49:35|GMT+0800
+
+[info] Log at : 2025/2/18|16:55:03|GMT+0800
+
+[info] Log at : 2025/2/19|14:16:46|GMT+0800
+
+[info] Log at : 2025/2/19|14:17:01|GMT+0800
+
+[info] Log at : 2025/2/20|19:45:02|GMT+0800
+
+[info] Log at : 2025/2/20|20:18:10|GMT+0800
+
+[info] Log at : 2025/2/25|17:42:04|GMT+0800
+
+[info] Log at : 2025/2/25|17:42:09|GMT+0800
+
+[info] Log at : 2025/2/25|17:42:27|GMT+0800
+
+[info] Log at : 2025/2/25|17:43:06|GMT+0800
+
+[info] Log at : 2025/2/25|17:43:16|GMT+0800
+
+[info] Log at : 2025/2/25|17:43:35|GMT+0800
+
+[info] Log at : 2025/2/25|17:45:18|GMT+0800
+
+[info] Log at : 2025/2/25|17:45:19|GMT+0800
+
+[SyntaxError: Unexpected end of JSON input
+	at JSON.parse (<anonymous>)
+	at F.updateCppProperties (c:\Users\CHALLENGER\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:10849)
+	at F.<anonymous> (c:\Users\CHALLENGER\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:12579)
+	at Generator.next (<anonymous>)
+	at c:\Users\CHALLENGER\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:4480
+	at new Promise (<anonymous>)
+	at r (c:\Users\CHALLENGER\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:4225)
+	at F.load (c:\Users\CHALLENGER\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:11310)
+	at w.<anonymous> (c:\Users\CHALLENGER\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:8737)
+	at Generator.next (<anonymous>)
+	at a (c:\Users\CHALLENGER\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:4282)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5)]
+[info] Log at : 2025/2/27|23:24:43|GMT+0800
+
+[info] Log at : 2025/3/1|17:03:19|GMT+0800
+
+[info] Log at : 2025/3/3|13:28:55|GMT+0800
+

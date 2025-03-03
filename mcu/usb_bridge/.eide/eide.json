@@ -1,0 +1,77 @@
+{
+  "name": "usb_bridge",
+  "type": "C51",
+  "dependenceList": [],
+  "srcDirs": [
+    "Application"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "Startup",
+        "files": [
+          {
+            "path": "STARTUP.A51"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "2217c38632ec4f5f6d2e3e4ec430f818"
+  },
+  "targets": {
+    "Target 1": {
+      "excludeList": [],
+      "toolchain": "Keil_C51",
+      "compileConfig": {
+        "options": "null"
+      },
+      "uploader": "Custom",
+      "uploadConfig": {
+        "bin": "",
+        "commandLine": "",
+        "eraseChipCommand": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../../../../../../../Keil_v5/C51/INC/STC",
+          "Application",
+          "PeripheralLib"
+        ],
+        "libList": [],
+        "defineList": []
+      },
+      "builderOptions": {
+        "Keil_C51": {
+          "version": 2,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "ram-mode": "SMALL",
+            "rom-mode": "LARGE"
+          },
+          "c/cpp-compiler": {
+            "optimization-type": "SPEED",
+            "optimization-level": "level-8"
+          },
+          "asm-compiler": {},
+          "linker": {
+            "remove-unused": true,
+            "output-format": "elf",
+            "misc-controls": ""
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}
