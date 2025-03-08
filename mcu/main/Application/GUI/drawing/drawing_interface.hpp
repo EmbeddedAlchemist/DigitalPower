@@ -1,3 +1,5 @@
+#pragma once
+
 #include "color.hpp"
 #include "font.hpp"
 #include "mono_bitmap.hpp"
@@ -33,7 +35,7 @@ enum class HorizonAlign : std::uint8_t {
 };
 
 struct TextDrawingOption {
-    std::int16_t _width       = 32767;
+    std::int16_t _width           = 32767;
     TextOverflow _overflow        = TextOverflow::Ellipsis;
     Rotation _rotation            = Rotation::rotate_0deg;
     TextRefPosition _ref_position = TextRefPosition::Baseline;
@@ -84,7 +86,7 @@ class DrawingInterface {
     virtual void draw_bitmap(Offset offset, MonoBitmapReader &bitmap, Color color, Rotation rotation = Rotation::rotate_0deg) = 0;
 
     // text
-    std::int16_t draw_character(Offset offset, const Font &font, std::uint32_t utf8_character, Color color);
+    std::int16_t draw_character(Offset offset, const Font &font, const FontCharacter *ch, Color color);
     std::int16_t draw_text(Offset offset, const Font &font, const char *text, Color color, const TextDrawingOption &option = TextDrawingOption());
     std::int16_t get_text_width(const Font &font, const char *text);
 
@@ -93,6 +95,12 @@ class DrawingInterface {
     virtual void set_clip_window(Offset offset, Size size)     = 0;
     virtual void get_clip_window(Offset &offset, Size &size)   = 0;
     virtual void reset_clip_window()                           = 0;
+
+    virtual void clear()                          = 0;
+    virtual void first_page()                     = 0;
+    virtual bool next_page()                      = 0;
+    virtual void update()                         = 0;
+    virtual void set_brightness(float brightness) = 0;
 };
 
 _NAMESPACE_EXGRAPHICS_END

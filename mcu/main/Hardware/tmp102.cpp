@@ -10,7 +10,7 @@ float TMP102::get_temperature() {
     return temperature;
 }
 
-void TMP102::update_loop_handle() {
+void TMP102::state_machine_loop_handle() {
     switch (state) {
     case UpdateState::waiting_for_next_update:
         if (HAL_GetTick() - last_update_time > 250) {

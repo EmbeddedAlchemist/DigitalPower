@@ -1,18 +1,18 @@
-/** exgraphics font file for font_Jetbrains_Mono_20px_w800_gs2bit
- * font_name:       Jetbrains Mono
+/** exgraphics font file for font_jetbrains_mono_20px_w800_gs2bit
+ * font_name:       jetbrains mono
  * font_size:       20px
  * font_weight:     800
  * gray_scale_bits: 2 bit(s)
- * character_count: 96 character(s)
+ * character_count: 4 character(s)
  * ascent:          20px
  * descent:         6px
- * content_size:    988 byte(s) 
- *                  =0.96484375 KB
- * struct_size:     1632 byte(s) 
- *                  =1.59375 KB
- * total_size:      2620 byte(s) 
- *                  =2.55859375 KB
+ * content_size:    36 byte(s) 
+ *                  =0.03515625 KB
+ * struct_size:     68 byte(s) 
+ *                  =0.06640625 KB
+ * total_size:      104 byte(s) 
+ *                  =0.1015625 KB
  */
 
 #include "font.hpp"
-extern const exgraphics::Font font_Jetbrains_Mono_20px_w800_gs2bit;
+extern const exgraphics::Font font_jetbrains_mono_20px_w800_gs2bit;

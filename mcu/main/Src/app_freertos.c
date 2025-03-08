@@ -99,6 +99,17 @@ const osMessageQueueAttr_t consoleBufferQueue_attributes = {
   .mq_mem = &consoleBufferQueueBuffer,
   .mq_size = sizeof(consoleBufferQueueBuffer)
 };
+/* Definitions for uiInputEventQueue */
+osMessageQueueId_t uiInputEventQueueHandle;
+uint8_t uiInputEventQueueBuffer[ 32 * sizeof( uint8_t ) ];
+osStaticMessageQDef_t uiInputEventQueueControlBlock;
+const osMessageQueueAttr_t uiInputEventQueue_attributes = {
+  .name = "uiInputEventQueue",
+  .cb_mem = &uiInputEventQueueControlBlock,
+  .cb_size = sizeof(uiInputEventQueueControlBlock),
+  .mq_mem = &uiInputEventQueueBuffer,
+  .mq_size = sizeof(uiInputEventQueueBuffer)
+};
 /* Definitions for powerControlTimer */
 osTimerId_t powerControlTimerHandle;
 osStaticTimerDef_t powerControlTimerControlBlock;
@@ -161,6 +172,9 @@ void MX_FREERTOS_Init(void) {
   /* Create the queue(s) */
   /* creation of consoleBufferQueue */
   consoleBufferQueueHandle = osMessageQueueNew (512, sizeof(char), &consoleBufferQueue_attributes);
+
+  /* creation of uiInputEventQueue */
+  uiInputEventQueueHandle = osMessageQueueNew (32, sizeof(uint8_t), &uiInputEventQueue_attributes);
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */

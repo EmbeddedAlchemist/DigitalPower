@@ -9,7 +9,7 @@ void main(void) {
     leds_init();
     sys_timer_init();
 
-    leds_set_brightness(3);
+    leds_set_brightness(16);
     leds_set_state(0, true);
     leds_set_state(1, true);
     leds_set_state(2, true);

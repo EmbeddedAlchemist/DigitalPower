@@ -260,14 +260,13 @@ void DrawingInterface::fill_pill(Offset offset, Size size, Color color) {
     }
 }
 
-std::int16_t DrawingInterface::draw_character(Offset offset, const Font &font, std::uint32_t ch, Color color) {
-    const FontCharacter *character = font.find(ch);
-    if (character == nullptr)
+std::int16_t DrawingInterface::draw_character(Offset offset, const Font &font, const FontCharacter *ch, Color color) {
+    if (ch == nullptr)
         return 0;
-    offset.y += character->offset_y;
-    MonoBitmapReader reader(*character, font.grayscale_bits);
+    offset.y += ch->offset_y;
+    MonoBitmapReader reader(*ch, font.grayscale_bits);
     draw_bitmap(offset, reader, color);
-    return character->size.width;
+    return ch->size.width;
 }
 
 std::int16_t DrawingInterface::draw_text(Offset offset, const Font &font, const char *text, Color color, const TextDrawingOption &option) {

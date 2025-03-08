@@ -36,7 +36,7 @@ void PowerSample::init() {
     HAL_OPAMP_Start(&opamp_iout_handle);
     HAL_OPAMP_Start(&opamp_iin_handle);
     HAL_ADC_Start_DMA(&adc1_handle, reinterpret_cast<std::uint32_t *>(&adc_buffer[0]), 3);
-    HAL_ADC_Start_DMA(&adc1_handle, reinterpret_cast<std::uint32_t *>(&adc_buffer[3]), 3);
+    HAL_ADC_Start_DMA(&adc2_handle, reinterpret_cast<std::uint32_t *>(&adc_buffer[3]), 3);
 }
 
 void PowerSample::handle_auto_gain(void) {

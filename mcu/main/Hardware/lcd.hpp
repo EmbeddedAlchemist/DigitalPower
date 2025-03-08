@@ -60,8 +60,8 @@ class Lcd : public exgraphics::DisplayAdapter<RGB565> {
     void set_pixel(std::uint16_t x, std::uint16_t y, std::uint16_t color);
 
     virtual void update_area(exgraphics::Offset offset, exgraphics::Size size, const ColorType *buffer) override final;
+    virtual void set_brightness(float brightness) override final;
 
-    void set_brightness(float brightness);
 
     void on_spi_transmit_success();
     void on_spi_transmit_fail();

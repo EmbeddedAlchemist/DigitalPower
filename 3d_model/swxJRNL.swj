@@ -1,0 +1,16 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 03/03/25 by EmbeddedAlchemist
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\CHALLENGER\Documents\KeXieData\Project\DigitalPower\3d_model\shell_top.SLDPRT", 1, 0, "", longstatus, longwarnings)

@@ -7,20 +7,7 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__availability \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\Hardware\Console.hpp \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stddef.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
-  ..\Inc\FreeRTOSConfig.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h \
+  ..\Hardware\onboard_resource.hpp ..\Hardware\button.hpp \
   ..\BSP\hal_header.hpp \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
   ..\Inc\stm32g4xx_hal_conf.h \
@@ -37,6 +24,8 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   ..\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h \
@@ -77,54 +66,31 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_crc.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_crc_ex.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdarg \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
-  ..\Application\GUI\drawing\RGB565.hpp \
-  ..\Application\GUI\drawing\Color.hpp \
-  ..\Application\GUI\drawing\util\macros.hpp \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdio \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  ..\Application\GUI\drawing\display_buffer.hpp \
-  ..\Application\GUI\drawing\offset.hpp \
-  ..\Application\GUI\drawing\Size.hpp \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstddef \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\enable_if.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\integral_constant.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_integral.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_cv.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_const.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_volatile.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdlib \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdlib.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  ..\Application\GUI\fonts\font_DIN_COROS_56px_w500_gs2bit.hpp \
-  ..\Application\GUI\drawing\font.hpp \
-  ..\Application\GUI\drawing\mono_bitmap.hpp \
-  ..\Application\GUI\drawing\bitmap.hpp \
-  ..\Application\GUI\fonts\font_DIN_COROS_64px_w500_gs2bit.hpp \
-  ..\Application\GUI\fonts\font_Jetbrains_Mono_20px_w800_gs2bit.hpp \
-  ..\Application\GUI\fonts\font_MiSans_10px_w700_gs4bit.hpp \
-  ..\Application\GUI\fonts\font_MiSans_12px_w500_gs4bit.hpp \
-  ..\Application\GUI\fonts\font_MiSans_16px_w500_gs2bit.hpp \
-  ..\Application\GUI\fonts\font_MiSans_20px_w500_gs2bit.hpp \
-  ..\Application\GUI\drawing\graphics.hpp \
-  ..\Application\GUI\drawing\display_adapter.hpp \
-  ..\Application\GUI\drawing\drawing_interface.hpp \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\algorithm \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__bits \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__debug \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\functional \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\search.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\comp.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\iterator_operations.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\iter_swap.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\declval.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\swap.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\move.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\type_traits \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\invoke.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\add_lvalue_reference.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_referenceable.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\integral_constant.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_same.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\apply_cv.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_const.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_volatile.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_reference.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstddef \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\enable_if.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_integral.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_cv.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_const.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_volatile.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\conditional.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\decay.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\add_pointer.h \
@@ -139,7 +105,6 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_member_object_pointer.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_reference_wrapper.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\nat.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\declval.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\forward.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__fwd\hash.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\add_const.h \
@@ -235,15 +200,6 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_pointer.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\result_of.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\type_identity.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstring \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\adjacent_find.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\comp.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\iterator_operations.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\iter_swap.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\swap.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\move.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\ranges_iterator_concept.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\concepts.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\incrementable_traits.h \
@@ -283,7 +239,11 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\advance.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\convert_to_integral.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\unreachable.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdlib \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdlib.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\distance.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__ranges\access.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__ranges\enable_borrowed_range.h \
@@ -296,17 +256,7 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\iter_swap.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\next.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\prev.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\all_of.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\any_of.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\binary_search.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\comp_ref_type.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\lower_bound.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\half_positive.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\identity.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\clamp.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\copy.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\unwrap_iter.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\unwrap_range.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\pair.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\common_comparison_category.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\ordering.h \
@@ -326,13 +276,130 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__tuple\tuple_size.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__tuple\tuple_like.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\piecewise_construct.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\reverse_iterator.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_three_way.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__debug \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\binary_function.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\binary_negate.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\bind.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\weak_result_type.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\unary_function.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\tuple \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocator_arg_t.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\uses_allocator.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\compare \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_partial_order_fallback.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\partial_order.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\weak_order.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\strong_order.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__bit\bit_cast.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\priority_tag.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cmath \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\math.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\promote.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_strong_order_fallback.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_three_way_result.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_weak_order_fallback.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\is_eq.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\exception \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\iosfwd \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__mbstate_t.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\wchar.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\wchar.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\new \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\typeinfo \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\utility \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\as_const.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\cmp.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\forward_like.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\in_place.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\rel_ops.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\to_underlying.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\transaction.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\bind_back.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\perfect_forward.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\bind_front.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\binder1st.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\binder2nd.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\boyer_moore_searcher.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\fill_n.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\hash.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstring \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\operations.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\shared_ptr.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\reference_wrapper.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\access.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocation_guard.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocator_traits.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\construct_at.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\voidify.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocator.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocate_at_least.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdexcept \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\auto_ptr.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\compressed_pair.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\uninitialized_algorithms.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\copy.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\unwrap_iter.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\unwrap_range.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\reverse_iterator.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\iterator.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__ranges\subrange.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__ranges\dangling.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__ranges\view_interface.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__ranges\empty.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\move.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\unique_ptr.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\atomic \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\duration.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\ratio \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\climits \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\limits.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__thread\poll_with_backoff.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\high_resolution_clock.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\steady_clock.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\time_point.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\system_clock.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\ctime \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\time.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__filesystem\file_time_type.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\file_clock.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__thread\timed_backoff_policy.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\chrono \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\calendar.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\convert_to_timespec.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\day.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\hh_mm_ss.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\literals.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\year.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\month.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\month_weekday.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\weekday.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\monthday.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\year_month.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\year_month_day.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\year_month_weekday.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\array \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\equal.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\lexicographical_compare.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\comp_ref_type.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\swap_ranges.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\data.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\empty.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\reverse_access.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\size.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\algorithm \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__bits \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\adjacent_find.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\all_of.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\any_of.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\binary_search.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\lower_bound.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\half_positive.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\clamp.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\copy_backward.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\ranges_copy.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\in_out_result.h \
@@ -340,14 +407,11 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\copy_n.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\count.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\count_if.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\equal.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\equal_range.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\upper_bound.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\fill.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\fill_n.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\find.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\find_end.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\search.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\find_first_of.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\find_if.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\find_if_not.h \
@@ -364,63 +428,16 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\inplace_merge.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\min.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\min_element.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\move.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\rotate.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\move_backward.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\swap_ranges.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\destruct_n.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\temporary_buffer.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\new \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\exception \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\unique_ptr.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_three_way.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\hash.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\unary_function.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\operations.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\binary_function.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocator_traits.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\construct_at.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\access.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\voidify.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\auto_ptr.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\compressed_pair.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\tuple \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocator_arg_t.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\uses_allocator.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\compare \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_partial_order_fallback.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\partial_order.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\weak_order.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\strong_order.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__bit\bit_cast.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\priority_tag.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cmath \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\math.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\promote.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_strong_order_fallback.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\compare_weak_order_fallback.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__compare\is_eq.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\iosfwd \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__mbstate_t.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\wchar.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\wchar.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\typeinfo \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\utility \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\as_const.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\cmp.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\forward_like.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\in_place.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\rel_ops.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\to_underlying.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__utility\transaction.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\is_heap.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\is_heap_until.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\is_partitioned.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\is_permutation.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\is_sorted.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\is_sorted_until.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\lexicographical_compare.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\make_heap.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\sift_down.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\max.h \
@@ -441,9 +458,6 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\push_heap.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__debug_utils\randomize_range.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\ranges_operations.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\climits \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\limits.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\partial_sort_copy.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\make_projected.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\partition.h \
@@ -572,33 +586,6 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\shift_left.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\shift_right.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\transform.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\chrono \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\calendar.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\duration.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\ratio \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\time_point.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\convert_to_timespec.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\day.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\file_clock.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\system_clock.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\ctime \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\time.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\hh_mm_ss.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\high_resolution_clock.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\steady_clock.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\literals.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\year.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\month.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\month_weekday.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\weekday.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\monthday.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\year_month.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\year_month_day.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__chrono\year_month_weekday.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\atomic \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__thread\poll_with_backoff.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__filesystem\file_time_type.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__thread\timed_backoff_policy.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\iterator \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\back_insert_iterator.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\bounded_iter.h \
@@ -607,8 +594,6 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__variant\monostate.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\counted_iterator.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\default_sentinel.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\data.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\empty.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\erase_if_container.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\front_insert_iterator.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\insert_iterator.h \
@@ -618,35 +603,66 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\move_sentinel.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\ostream_iterator.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\ostreambuf_iterator.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\reverse_access.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__iterator\size.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\memory \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\align.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocate_at_least.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocation_guard.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\allocator.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdexcept \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\assume_aligned.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\concepts.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\ranges_construct_at.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\ranges_uninitialized_algorithms.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\uninitialized_algorithms.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\raw_storage_iterator.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\shared_ptr.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\reference_wrapper.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\weak_result_type.h \
-  ..\Hardware\onboard_resource.hpp ..\Hardware\serial_led.hpp \
-  ..\Util\clamp.hpp ..\Hardware\buzzer.hpp ..\Hardware\lcd.hpp \
-  ..\Hardware\power_sample.hpp ..\Hardware\tmp102.hpp \
-  ..\Hardware\usbpd.hpp ..\Inc\usbpd_dpm_conf.h ..\Inc\usbpd_pdo_defs.h \
-  ..\Middlewares\ST\STM32_USBPD_Library\Core\inc\usbpd_def.h \
-  ..\Inc\usbpd_dpm_user.h ..\Inc\usbpd_vdm_user.h \
-  ..\Inc\usbpd_dpm_core.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\unordered_map \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\is_transparent.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__hash_table \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\swap_allocator.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__node_handle \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\optional \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_allocator.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\vector \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__bit_reference \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__format\enable_insertable.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\swap_allocator.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\temp_value.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__split_buffer \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\is_allocator.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\noexcept_move_assign_container.h
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\noexcept_move_assign_container.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\compose.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\default_searcher.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\function.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\builtin_new_allocator.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\mem_fn.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\mem_fun_ref.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\not_fn.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\pointer_to_binary_function.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\pointer_to_unary_function.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\unary_negate.h \
+  ..\Hardware\buzzer.hpp ..\Hardware\console.hpp \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
+  ..\Inc\FreeRTOSConfig.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
+  ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdarg \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\Hardware\encoder.hpp ..\Hardware\lcd.hpp \
+  ..\Application\GUI\drawing\RGB565.hpp \
+  ..\Application\GUI\drawing\Color.hpp \
+  ..\Application\GUI\drawing\util\macros.hpp \
+  ..\Application\GUI\drawing\display_adapter.hpp \
+  ..\Application\GUI\drawing\offset.hpp \
+  ..\Application\GUI\drawing\Size.hpp ..\Hardware\power_sample.hpp \
+  ..\Hardware\serial_led.hpp ..\Util\clamp.hpp ..\Hardware\tmp102.hpp \
+  ..\Hardware\usbpd.hpp ..\Inc\usbpd_dpm_conf.h ..\Inc\usbpd_pdo_defs.h \
+  ..\Middlewares\ST\STM32_USBPD_Library\Core\inc\usbpd_def.h \
+  ..\Inc\usbpd_dpm_user.h ..\Inc\usbpd_vdm_user.h \
+  ..\Inc\usbpd_dpm_core.h ..\Hardware\power_control.hpp \
+  ..\Application\GUI\ui\ui_resource.hpp \
+  ..\Application\GUI\ui\ui_controler.hpp \
+  ..\Application\GUI\drawing\drawing_interface.hpp \
+  ..\Application\GUI\drawing\font.hpp \
+  ..\Application\GUI\drawing\mono_bitmap.hpp \
+  ..\Application\GUI\drawing\bitmap.hpp ..\Application\GUI\ui\ui.hpp \
+  ..\Application\GUI\ui\main_ui.hpp ..\Util\timeout.hpp

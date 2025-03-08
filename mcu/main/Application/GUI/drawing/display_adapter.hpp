@@ -11,6 +11,7 @@ class DisplayAdapter{
     public:
       using ColorType = tp_color_type;
       virtual void update_area(Offset offset, Size size, const ColorType *buffer) = 0;
+      virtual void set_brightness(float brightness)                               = 0;
 };
 
 _NAMESPACE_EXGRAPHICS_END

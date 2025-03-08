@@ -560,7 +560,7 @@ digitalpowernew/usbpd.o: ..\Hardware\usbpd.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\ranges_uninitialized_algorithms.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\raw_storage_iterator.h \
   ..\Util\clamp.hpp ..\Util\in_range.hpp \
-  ..\Hardware\onboard_resource.hpp ..\Hardware\serial_led.hpp \
+  ..\Hardware\onboard_resource.hpp ..\Hardware\button.hpp \
   ..\BSP\hal_header.hpp \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
   ..\Inc\stm32g4xx_hal_conf.h \
@@ -613,7 +613,32 @@ digitalpowernew/usbpd.o: ..\Hardware\usbpd.cpp \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_crc.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_crc_ex.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h \
-  ..\Hardware\buzzer.hpp ..\Hardware\lcd.hpp \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\functional \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\binary_negate.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\bind.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\bind_back.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\perfect_forward.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\bind_front.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\binder1st.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\binder2nd.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\boyer_moore_searcher.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\array \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\unordered_map \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\is_transparent.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__hash_table \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__node_handle \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\optional \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\compose.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\default_searcher.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\function.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__memory\builtin_new_allocator.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\mem_fn.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\mem_fun_ref.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\not_fn.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\pointer_to_binary_function.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\pointer_to_unary_function.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\unary_negate.h \
+  ..\Hardware\buzzer.hpp ..\Hardware\console.hpp \
   ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
   ..\Inc\FreeRTOSConfig.h \
@@ -625,12 +650,14 @@ digitalpowernew/usbpd.o: ..\Hardware\usbpd.cpp \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdarg \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\Hardware\encoder.hpp ..\Hardware\lcd.hpp \
   ..\Application\GUI\drawing\RGB565.hpp \
   ..\Application\GUI\drawing\Color.hpp \
   ..\Application\GUI\drawing\util\macros.hpp \
   ..\Application\GUI\drawing\display_adapter.hpp \
   ..\Application\GUI\drawing\offset.hpp \
-  ..\Application\GUI\drawing\Size.hpp ..\Hardware\console.hpp \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdarg \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
-  ..\Hardware\power_sample.hpp ..\Hardware\tmp102.hpp
+  ..\Application\GUI\drawing\Size.hpp ..\Hardware\power_sample.hpp \
+  ..\Hardware\serial_led.hpp ..\Hardware\tmp102.hpp \
+  ..\Hardware\power_control.hpp

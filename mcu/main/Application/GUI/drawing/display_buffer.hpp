@@ -15,8 +15,7 @@ struct DisplayBuffer {
     ColorType buffer[tp_height][tp_width];
 
     inline ColorType &offset(Offset offset) noexcept {
-        if (offset.x >= width || offset.y >= height)
-            asm("BKPT 0");
+// 
         return buffer[offset.y][offset.x];
     }
 };

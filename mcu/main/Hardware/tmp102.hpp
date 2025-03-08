@@ -37,7 +37,7 @@ class TMP102 {
     void update();
     float get_temperature();
 
-    void update_loop_handle();
+    void state_machine_loop_handle();
 
     void on_read_write_success();
     void on_read_write_failure();

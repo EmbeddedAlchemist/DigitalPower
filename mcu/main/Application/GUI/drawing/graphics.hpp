@@ -161,14 +161,14 @@ class Graphics : public DrawingInterface {
         buffer.offset(to_page_offset(offset)) = color;
     }
 
-    inline virtual void draw_line(Offset start, Offset end, Color _color) override final {
-        ColorType color(_color);
-        if (start.y == end.y)
-            return draw_horizon_line(start, end, color);
-        else if (start.x == end.x)
-            return draw_vertical_line(start, end, color);
-        DrawingInterface::draw_line(start, end, _color);
-    }
+    // inline virtual void draw_line(Offset start, Offset end, Color _color) override final {
+    //     ColorType color(_color);
+    //     if (start.y == end.y)
+    //         return draw_horizon_line(start, end, color);
+    //     else if (start.x == end.x)
+    //         return draw_vertical_line(start, end, color);
+    //     DrawingInterface::draw_line(start, end, _color);
+    // }
 
     inline virtual void fill_rect(Offset start, Size size, Color _color) override final {
         if (!contain_drawable_area(start, size))
@@ -291,11 +291,11 @@ class Graphics : public DrawingInterface {
         clip_end   = Offset(display_size.width, display_size.height);
     }
 
-    inline void first_page(void) {
+    inline virtual void first_page(void) override final {
         page_offset = Offset(0, 0);
     }
 
-    inline bool next_page(void) {
+    inline virtual bool next_page(void) override final {
         Offset bkup = page_offset;
         page_offset.x += page_size.width;
         if (page_offset.x < display_size.width)
@@ -312,8 +312,16 @@ class Graphics : public DrawingInterface {
         std::fill_n(&buffer.offset({0, 0}), buffer.width * buffer.height, color);
     }
 
-    inline void update() {
+    inline virtual void update() override final {
         display_adapter.update_area(page_offset, page_size, &buffer.offset(Offset(0, 0)));
+    }
+
+    inline virtual void clear() override final {
+        fill(ColorType(0,0,0));
+    }
+
+    inline virtual void set_brightness(float brightness) override final {
+        display_adapter.set_brightness(brightness);
     }
 };
 
