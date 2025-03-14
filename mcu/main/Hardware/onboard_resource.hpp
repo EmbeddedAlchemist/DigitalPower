@@ -20,5 +20,6 @@ extern TMP102 temperature_sensor_mosfet;
 extern USBPD pd;
 extern Button button1, button2, button_enc;
 extern Encoder encoder;
+extern PowerControl power_control;
 
 void onboard_resource_init_after_os_ready();

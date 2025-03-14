@@ -21,19 +21,19 @@ extern "C" void user_main(void *unused_arg) {
     console.verbose("Start power_control_timer, %s with code %d.", status == osOK ? "succeed" : "failed", status);
 
     serial_led.init();
-    serial_led.set_pixel(0, 16, 16, 16);
-    serial_led.set_pixel(1, 16, 16, 16);
+//    serial_led.set_pixel(0, 16, 16, 16);
+//    serial_led.set_pixel(1, 16, 16, 16);
     serial_led.set_pixel(2, 16, 16, 16);
     serial_led.set_pixel(3, 16, 16, 16);
     serial_led.set_pixel(4, 16, 16, 16);
-    // serial_led.set_pixel(5, 0, 255, 255);
-    // serial_led.set_pixel(6, 255, 64, 0);
-    // serial_led.set_pixel(7, 255, 64, 0);
-    // serial_led.set_pixel(8, 0, 255, 0);
-    serial_led.set_brightness(0.2);
+    serial_led.set_pixel(5, 0, 255, 255);
+    serial_led.set_pixel(6, 255, 64, 0);
+    serial_led.set_pixel(7, 255, 64, 0);
+    serial_led.set_pixel(8, 0, 255, 0);
+    serial_led.set_brightness(1);
     serial_led.update();
 
-    pd.set_voltage(15.f);
+    pd.set_voltage(20.f);
 
     buzzer.set_volume(0.2f);
     buzzer.play(buzzer_seq_start_up);

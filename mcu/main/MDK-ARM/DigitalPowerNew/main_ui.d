@@ -665,6 +665,7 @@ digitalpowernew/main_ui.o: ..\Application\GUI\ui\main_ui.cpp \
   ..\Middlewares\ST\STM32_USBPD_Library\Core\inc\usbpd_def.h \
   ..\Inc\usbpd_dpm_user.h ..\Inc\usbpd_vdm_user.h \
   ..\Inc\usbpd_dpm_core.h ..\Hardware\power_control.hpp \
+  ..\Filter\low_pass_filter.hpp ..\Filter\filter.hpp ..\Filter\pid.hpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cctype \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\ctype.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\ctype.h \

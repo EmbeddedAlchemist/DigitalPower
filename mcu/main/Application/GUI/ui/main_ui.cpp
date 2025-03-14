@@ -39,7 +39,13 @@ float ease_func(float x) {
 std::int16_t MainUI::draw_real_number(Offset offset, Color color_normal, Color color_leading_zero, float value) {
     Offset offset_cur = offset;
     char str_buf[8];
-    snprintf(str_buf, sizeof(str_buf), "%05.2f", value);
+    snprintf(str_buf,
+             sizeof(str_buf),
+             value >= 1000.f  ? "%05.0f"
+             : value >= 100.f ? "%05.1f"
+             : value >= 10.f  ? "%05.2f"
+                              : "%05.3f",
+             value);
     bool drawing_leading_zero = true;
 
     for (const char *ch = str_buf; *ch != 0; ch++) {

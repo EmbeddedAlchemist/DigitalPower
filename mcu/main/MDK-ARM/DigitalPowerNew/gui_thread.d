@@ -659,6 +659,7 @@ digitalpowernew/gui_thread.o: ..\Application\gui_thread.cpp \
   ..\Middlewares\ST\STM32_USBPD_Library\Core\inc\usbpd_def.h \
   ..\Inc\usbpd_dpm_user.h ..\Inc\usbpd_vdm_user.h \
   ..\Inc\usbpd_dpm_core.h ..\Hardware\power_control.hpp \
+  ..\Filter\low_pass_filter.hpp ..\Filter\filter.hpp ..\Filter\pid.hpp \
   ..\Application\GUI\ui\ui_resource.hpp \
   ..\Application\GUI\ui\ui_controler.hpp \
   ..\Application\GUI\drawing\drawing_interface.hpp \

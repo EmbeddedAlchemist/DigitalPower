@@ -2,6 +2,7 @@
 
 extern "C" void power_control_timer_handle(void *unused) {
     power_sample.handle_auto_gain();
+    power_control.timer_handler();
     // console.debug("dc voltage:  %.2fV", power_sample.get_dc_voltage());
     // console.debug("pd voltage:  %.2fV", power_sample.get_pd_voltage());
     // console.debug("in voltage:  %.2fV", power_sample.get_in_voltage());

@@ -18,7 +18,11 @@ TMP102 temperature_sensor_mosfet(hi2c3, 0b10010000);
 USBPD pd(0);
 Button button1, button2, button_enc;
 Encoder encoder(htim3);
-PowerControl power_control(htim1, TIM_CHANNEL_1, htim8, TIM_CHANNEL_1, output_ctrl_GPIO_Port, output_ctrl_Pin);
+PowerControl power_control(
+    htim1, TIM_CHANNEL_1,
+    htim8, TIM_CHANNEL_1,
+    output_ctrl_GPIO_Port, output_ctrl_Pin,
+    []() { return power_sample.get_out_voltage(); });
 
 void onboard_resource_init_after_os_ready() {
     console.init(consoleBufferQueueHandle);

@@ -660,4 +660,5 @@ digitalpowernew/usbpd.o: ..\Hardware\usbpd.cpp \
   ..\Application\GUI\drawing\offset.hpp \
   ..\Application\GUI\drawing\Size.hpp ..\Hardware\power_sample.hpp \
   ..\Hardware\serial_led.hpp ..\Hardware\tmp102.hpp \
-  ..\Hardware\power_control.hpp
+  ..\Hardware\power_control.hpp ..\Filter\low_pass_filter.hpp \
+  ..\Filter\filter.hpp ..\Filter\pid.hpp

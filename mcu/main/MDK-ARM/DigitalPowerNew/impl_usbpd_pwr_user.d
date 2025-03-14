@@ -660,4 +660,5 @@ digitalpowernew/impl_usbpd_pwr_user.o: \
   ..\Middlewares\ST\STM32_USBPD_Library\Core\inc\usbpd_def.h \
   ..\Inc\usbpd_dpm_user.h ..\Inc\usbpd_vdm_user.h \
   ..\Inc\usbpd_dpm_core.h ..\Hardware\power_control.hpp \
+  ..\Filter\low_pass_filter.hpp ..\Filter\filter.hpp ..\Filter\pid.hpp \
   ..\Inc\usbpd_pwr_user.h

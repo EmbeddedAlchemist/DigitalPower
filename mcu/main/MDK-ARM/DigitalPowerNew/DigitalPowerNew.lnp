@@ -33,6 +33,8 @@
 "digitalpowernew\ui_controler.o"
 "digitalpowernew\ui_resource.o"
 "digitalpowernew\startup_stm32g431xx.o"
+"digitalpowernew\low_pass_filter.o"
+"digitalpowernew\pid.o"
 "digitalpowernew\main.o"
 "digitalpowernew\gpio.o"
 "digitalpowernew\app_freertos.o"

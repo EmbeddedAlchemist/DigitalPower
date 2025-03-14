@@ -1,68 +1,8 @@
-digitalpowernew/power_control.o: ..\Hardware\power_control.cpp \
-  ..\Hardware\power_control.hpp ..\BSP\hal_header.hpp \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
-  ..\Inc\stm32g4xx_hal_conf.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h \
-  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h \
-  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h \
-  ..\Drivers\CMSIS\Include\core_cm4.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\Drivers\CMSIS\Include\cmsis_version.h \
-  ..\Drivers\CMSIS\Include\cmsis_compiler.h \
-  ..\Drivers\CMSIS\Include\cmsis_armclang.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
-  ..\Drivers\CMSIS\Include\mpu_armv7.h \
-  ..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stddef.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_comp.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dac.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dac_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_i2c.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_i2c_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_opamp.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_opamp_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_spi.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_spi_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_usart.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_usart_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_crc.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_crc_ex.h \
-  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h \
-  ..\Filter\low_pass_filter.hpp ..\Filter\filter.hpp ..\Filter\pid.hpp \
+digitalpowernew/pid.o: ..\Filter\pid.cpp ..\Filter\pid.hpp \
+  ..\Filter\filter.hpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__assert \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__verbose_abort \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__availability \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\type_traits \
@@ -82,6 +22,8 @@ digitalpowernew/power_control.o: ..\Hardware\power_control.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_const.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\remove_volatile.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\conditional.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\decay.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\add_pointer.h \
@@ -193,10 +135,7 @@ digitalpowernew/power_control.o: ..\Hardware\power_control.cpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\result_of.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\type_identity.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdint \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Util\clamp.hpp C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cmath \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\math.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__type_traits\promote.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdlib.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h
+  ..\Util\clamp.hpp

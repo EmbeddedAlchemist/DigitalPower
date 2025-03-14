@@ -658,4 +658,5 @@ digitalpowernew/power_control_timer_handle.o: \
   ..\Hardware\usbpd.hpp ..\Inc\usbpd_dpm_conf.h ..\Inc\usbpd_pdo_defs.h \
   ..\Middlewares\ST\STM32_USBPD_Library\Core\inc\usbpd_def.h \
   ..\Inc\usbpd_dpm_user.h ..\Inc\usbpd_vdm_user.h \
-  ..\Inc\usbpd_dpm_core.h ..\Hardware\power_control.hpp
+  ..\Inc\usbpd_dpm_core.h ..\Hardware\power_control.hpp \
+  ..\Filter\low_pass_filter.hpp ..\Filter\filter.hpp ..\Filter\pid.hpp

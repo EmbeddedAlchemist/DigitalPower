@@ -657,8 +657,10 @@ digitalpowernew/onboard_resource.o: ..\Hardware\onboard_resource.cpp \
   ..\Hardware\usbpd.hpp ..\Inc\usbpd_dpm_conf.h ..\Inc\usbpd_pdo_defs.h \
   ..\Middlewares\ST\STM32_USBPD_Library\Core\inc\usbpd_def.h \
   ..\Inc\usbpd_dpm_user.h ..\Inc\usbpd_vdm_user.h \
-  ..\Inc\usbpd_dpm_core.h ..\Hardware\power_control.hpp ..\Inc\adc.h \
-  ..\Inc\main.h ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_ucpd.h \
+  ..\Inc\usbpd_dpm_core.h ..\Hardware\power_control.hpp \
+  ..\Filter\low_pass_filter.hpp ..\Filter\filter.hpp ..\Filter\pid.hpp \
+  ..\Inc\adc.h ..\Inc\main.h \
+  ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_ucpd.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h \
